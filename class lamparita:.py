@@ -1,7 +1,7 @@
 class lamparita: 
 
-    def _init_(self,estado): 
-        self.estado = False 
+    def _init_(self,estado = False): 
+        self.estado = estado
 
 
     def encender_lamparita(self): 
@@ -15,10 +15,15 @@ class lamparita:
     
 
     def estado_lamparita(self): 
-
         if self.estado == False: 
             estado = 'Apagado'
         else: 
             estado = 'Encendida'
         return f'El estado de la lamparita es: {estado}'
     
+
+habitacionValen = lamparita(False) 
+
+habitacionValen.encender_lamparita() 
+habitacionValen.apagar_lamparita() 
+habitacionValen.estado_lamparita() 
