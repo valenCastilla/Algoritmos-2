@@ -1,0 +1,8 @@
+from collections.abc import callable: 
+
+def f(): 
+  pass 
+
+def wrapper (f: Callable[...]): 
+  f() 
+  print('Ejecutada f()')
